@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView_empty"
+        android:layout_width="@dimen/app_bar_height"
+        android:layout_height="@dimen/app_bar_height"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_news_icon"
+        android:contentDescription="@string/no_news_items_found"/>
+
+    <TextView
+        android:id="@+id/textView_empty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="@string/no_news_items_found"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="@dimen/margin_medium"/>
+
+    <Button
+        android:id="@+id/button_empty_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/retry"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">NY Times News</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="about">About</string>
+    <string name="press_back_again">Press back again to exit</string>
+    <string name="no_news_items_found">No News Items Found</string>
+    <string name="retry">Retry</string>
+    <string name="date">Date</string>
+    <string name="title">Title</string>
+    <string name="category">Category</string>
+    <string name="author">Author</string>
+    <string name="source">Source</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="sort">Sort</string>
+    <string name="cancel">Cancel</string>
+    <string name="search">Search</string>
+    <string name="search_news">Search News</string>
+    <string name="select_news_item">Select a news item to read</string>
+    <string name="error_loading_web">Error loading the webpage</string>
+    <string name="create_news">Create News</string>
+    <string name="share">Share</string>
+    <string name="share_message">Download NY Times News app for all your popular news</string>
+    <string name="geeric_error">An unknown error occurred, please try again later</string>
+    <string name="internet_connection_error">Please check your internet connection and try again</string>
+    <string name="too_many_requests">Too Many Requests</string>
+    <string name="news_with_id_not_found">News with ID %1$d  not Found</string>
+    <string name="error_creating_news">An error occurred while creating news item</string>
+</resources>

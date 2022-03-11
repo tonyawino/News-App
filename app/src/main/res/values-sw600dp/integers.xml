@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="image_feature_visibility">2</integer>
+    <integer name="detail_toolbar_visibility">2</integer>
+    <integer name="max_lines_default">4</integer>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/margin_medium"
+    android:paddingEnd="@dimen/margin_medium"
+    android:paddingTop="@dimen/margin_medium"
+    android:paddingBottom="@dimen/margin_medium"
+    android:background="?selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/imageView_feature"
+        android:layout_width="@dimen/list_item_image"
+        android:layout_height="@dimen/list_item_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars"
+        android:scaleType="centerCrop"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="@integer/max_lines_default"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/textView_author"
+        app:layout_constraintEnd_toStartOf="@id/imageView_forward"
+        app:layout_constraintStart_toEndOf="@id/imageView_feature"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        tools:text="Supporters of the Democratic candidate Jon Osof after his entourage was attacked in an unknown place that " />
+
+    <TextView
+        android:id="@+id/textView_author"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="@integer/max_lines_default"
+        app:layout_constraintBottom_toTopOf="@id/textView_date"
+        app:layout_constraintEnd_toEndOf="@id/textView_title"
+        app:layout_constraintStart_toStartOf="@id/textView_title"
+        app:layout_constraintTop_toBottomOf="@+id/textView_title"
+        android:layout_marginTop="@dimen/margin_small"
+        tools:text="By DAVID LEONHARDT and STUART A. THOMPSON and Other many users who we cnnot mention right now because of the limited space" />
+
+    <TextView
+        android:id="@+id/textView_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:drawableStartCompat="@drawable/ic_baseline_calendar_month_24"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/textView_title"
+        app:layout_constraintTop_toBottomOf="@+id/textView_author"
+        android:layout_marginTop="@dimen/margin_extra_small"
+        tools:text="2017-06-23" />
+
+    <ImageView
+        android:id="@+id/imageView_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:src="@drawable/ic_baseline_chevron_right_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="@integer/image_feature_visibility"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

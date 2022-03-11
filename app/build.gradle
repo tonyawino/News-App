@@ -57,6 +57,7 @@ android {
         unitTests.all {
             jacoco {
                 includeNoLocationClasses = true
+                excludes = ['jdk.internal.*']       //This line
             }
         }
         unitTests.returnDefaultValues = true

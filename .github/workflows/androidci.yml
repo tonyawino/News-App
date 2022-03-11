@@ -2,10 +2,13 @@ name: Android CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  
 jobs:
   build:
 
@@ -37,14 +40,14 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: report 
-        path: app/build/reports/coverage/debug
+        path: app/build/reports/coverage/androidTest
 
 
     - name: Download Test Reports Folder
       uses: actions/download-artifact@v2
       with:
         name: report
-        path: app/build/reports/coverage/debug
+        path: app/build/reports/coverage/androidTest
 
     - name: Upload Test Report
-      run:  bash <(curl -s https://codecov.io/bash) -f "app/build/reports/coverage/debug/report.xml"
+      run:  bash <(curl -s https://codecov.io/bash) -f "app/build/reports/coverage/androidTest/debug/report.xml"
